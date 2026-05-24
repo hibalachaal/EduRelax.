@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#E8F0F9">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Journal d’humeur 💙"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrer la date d'aujourd'hui :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex : 22/05/2026"
+        android:layout_marginBottom="20dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioHappy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😊 Heureux(se)"/>
+
+        <RadioButton
+            android:id="@+id/radioNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😐 Passable"/>
+
+        <RadioButton
+            android:id="@+id/radioSad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😔 Triste"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnSaveMood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retour"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <ListView
+        android:id="@+id/listViewMoods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

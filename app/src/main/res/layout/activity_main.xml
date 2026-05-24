@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F0F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/txtMotivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu fais de ton mieux, et c’est déjà énorme 💙"
+            android:textSize="20sp"
+            android:textColor="#0D47A1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:background="@drawable/bg_motivation"
+            android:elevation="4dp"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bonjour 💙"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:layout_marginBottom="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:divider="?android:dividerHorizontal"
+            android:showDividers="middle"
+            android:dividerPadding="12dp">
+
+
+            <LinearLayout
+                android:id="@+id/cardRespiration"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_respiration" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Respiration guidée"
+                    android:textSize="18sp"
+                    android:textColor="#0D47A1"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cardSon"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_son" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sons relaxants"
+                    android:textSize="18sp"
+                    android:textColor="#0D47A1"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cardCitation"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_citation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Citation du jour"
+                    android:textSize="18sp"
+                    android:textColor="#0D47A1"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cardTimer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_timer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Timer d'étude"
+                    android:textColor="#0D47A1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cardJournal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_journal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Journal d’humeur"
+                    android:textSize="18sp"
+                    android:textColor="#0D47A1"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
